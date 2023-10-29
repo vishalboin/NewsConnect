@@ -2,7 +2,7 @@ const NewsAPI = require('newsapi');
 const newsapi = new NewsAPI('0b897ecb342e419baac8c0c06503f9eb');
 
 const asyncWrapper = require('../middleware/async')
-const { createCustomError } = require('../errors/custom-error')
+// const { createCustomError } = require('../errors/custom-error')
 
 const everything = asyncWrapper(async (req, res) =>{
   await newsapi.v2.everything({
